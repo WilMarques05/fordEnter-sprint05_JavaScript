@@ -36,7 +36,7 @@
         </div>
         <div>
           <h2 class="titulo">Sobre Você</h2>
-          <form onsubmit="return Post(this)">
+          <form onsubmit="return Post(this);">
             <input
               id="nomeid"
               type="text"
@@ -90,6 +90,23 @@
               placeholder="Deixe seu comentário, ele é muito importante para nós!"
               id="caixa-texto"
             ></textarea>
+            <span class="fordform text-termos">
+              <p>
+                Os dados serão mantidos em nossa base de dados, só enquanto for
+                desejado por você. A qualquer momento, será possível editar ou
+                remover tais dados.
+              </p>
+            </span>
+            <div>
+              <span class="fordform termos">
+                <input class="checkbox-termos" type="checkbox" />
+                <p>Sim. Li e concordo com os Termos e Condições.</p>
+              </span>
+              <span class="fordform termos">
+                <input class="checkbox-termos" type="checkbox" />
+                <p>Sim. Também quero receber descontos e novidades.</p>
+              </span>
+            </div>
             <button type="submit">Enviar</button>
           </form>
         </div>
