@@ -57,3 +57,16 @@ button {
 .titulo {
     margin-left: 8px;
 }
+
+.text-termos{
+    border: none;
+    color: #464444e8;
+    /* margin-bottom: 30px; */
+}
+
+.termos{
+    border: none;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
