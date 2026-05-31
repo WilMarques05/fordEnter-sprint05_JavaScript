@@ -23,17 +23,16 @@ select:focus-visible {
     outline: none;
 }
 
-main div {
-    display: inline-block;
+.check {
     vertical-align: top;
     text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .forms {
-    display: block;
+    display: flex;
     text-align: center;
+    margin-top: 10px;
 }
 
 h2 {
@@ -52,6 +51,7 @@ button {
     height: 40px;
     margin-right: 8px;
     float: right;
+    margin-bottom: 10px;
 }
 
 .titulo {
@@ -61,12 +61,13 @@ button {
 .text-termos{
     border: none;
     color: #464444e8;
-    /* margin-bottom: 30px; */
+    background-color: #807d7d39;
+    height: 50px;
+    text-align: justify;
 }
 
 .termos{
     border: none;
     display: flex;
-    padding-top: 20px;
     align-items: center;
 }
