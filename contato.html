@@ -95,14 +95,29 @@
                 Os dados serão mantidos em nossa base de dados, só enquanto for
                 desejado por você. A qualquer momento, será possível editar ou
                 remover tais dados.
+                <a
+                  href="https://www.ford.com.br/politica-de-privacidade/"
+                  target="_blank"
+                  >Termos e Condições.</a
+                >
               </p>
             </span>
-            <div class="check">
+            <div class="check-container">
               <span class="fordform termos">
-                <input class="checkbox-termos" type="checkbox" />
+                <input
+                  class="checkbox-termos"
+                  type="checkbox"
+                  required
+                  oninvalid="
+                    this.setCustomValidity(
+                      `Leia os termos e condições! Caso concorde, marque aqui para continuar!`,
+                    )
+                  "
+                  oninput="this.setCustomValidity(``)"
+                />
                 <p>Sim. Li e concordo com os Termos e Condições.</p>
               </span>
-              <span class="fordform termos">
+              <span class="fordform termos" id="check-novidades">
                 <input class="checkbox-termos" type="checkbox" />
                 <p>Sim. Também quero receber descontos e novidades.</p>
               </span>
